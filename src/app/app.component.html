@@ -1,4 +1,29 @@
 <hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+
+<br>
+<textarea type="number" id="a" [(ngModel)]="input"></textarea>
+<div>
+  <button (click)="satu()" style="[]"> 1</button>
+  <button (click)="dua()">2</button>
+  <button (click)="tiga()">3</button>
+</div>
+<div>
+  <button (click)="empat()">4</button>
+  <button (click)="lima()">5</button>
+  <button (click)="enam()">6</button>
+</div>
+<div>
+  <button (click)="tujuh()">7</button>
+  <button (click)="delapan()">8</button>
+  <button (click)="sembilan()">9</button>
+</div>
+<div>
+  <button (click)="plus()">+</button>
+  <button (click)="minus()">-</button>
+  <button (click)="kali()">x</button>
+  <button (click)="hasil()">=</button>
+</div>
+<button (click)="clear()">CLEAR</button>
+
+<router-outlet>
+</router-outlet>

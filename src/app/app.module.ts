@@ -4,10 +4,15 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+import { HasilComponent } from './hasil/hasil.component';
+import {Routes, RouterModule} from '@angular/router';
+const ROUTES:Routes=[
+  {path:'', component:HasilComponent}
+]
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent ],
+  imports:      [ BrowserModule, FormsModule , RouterModule.forRoot(ROUTES)],
+  declarations: [ AppComponent, HelloComponent, HasilComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
